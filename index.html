@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     
+    
     <title>Vite App</title>
-  <script type="module" crossorigin src="assets/index.669096f1.js"></script>
-  <link rel="modulepreload" href="assets/vendor.ad28dfe5.js">
-  <link rel="stylesheet" href="assets/index.0aef00b9.css">
+  <script type="module" crossorigin src="assets/main.5b962239.js"></script>
+  <link rel="modulepreload" href="assets/input.f979339b.js">
+  <link rel="modulepreload" href="assets/vendor.4cf36dfc.js">
+  <link rel="stylesheet" href="assets/input.5ecc99e8.css">
+  <link rel="stylesheet" href="assets/main.fb71591c.css">
 </head>
 
   <body class="relative">
@@ -65,7 +68,10 @@
             class="w-full h-full"
           />
         </a>
-        <button class="flex circle items-center justify-center relative group">
+        <button
+          class="flex circle items-center justify-center relative group"
+          onclick="window.location.href = './preorder/';"
+        >
           <span
             class="text-white absolute right-[50px] h-10 w-[91px] bg-black rounded-md hidden group-hover:block after:content-[' '] after:bg-black after:w-2.5 after:h-2.5 after:rounded-sm after:absolute after:left-[85px] after:rotate-45 after:mt-3.5 animate-opacity"
           >
@@ -316,9 +322,9 @@
                   >
                 </p>
                 <button
-                  class="button button-buy h-[46px] focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake"
+                  class="button button-buy h-[46px] focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake font-bold"
                 >
-                  В корзину
+                  > В корзину
                 </button>
               </div>
               <div
@@ -409,7 +415,7 @@
               data-aos-delay="600"
             >
               <img
-                class="mt-[-30px] lg:mt-[-90px] h-[280px] sm:h-[530px] w-[calc(100vw+150px)] md:h-[428px] lg:h-[538px] 2xl:h-[640px] lg:ml-[-110px] xl:ml-[-40px] 3xl:ml-[-115px] 2xl:mt-[-165px] md:ml-[-50px] 3xl:w-100% delivery-img"
+                class="mt-[-30px] lg:mt-[-90px] h-[360px] sm:h-[530px] w-[calc(100vw+150px)] md:h-[428px] lg:h-[538px] 2xl:h-[640px] lg:ml-[-110px] xl:ml-[-40px] 3xl:ml-[-115px] 2xl:mt-[-165px] md:ml-[-50px] 3xl:w-100% delivery-img"
                 src="https://i.imgur.com/0LhZlW7.png"
                 alt=""
               />
@@ -711,6 +717,45 @@
             </div>
           </div>
         </footer>
+      </div>
+    </div>
+    <div
+      class="fixed bottom-0 min-h-[184px] rounded-t-[30px] bg-white z-50 w-full shadow-cookies justify-center items-center text-sm md:text-base cookies"
+    >
+      <div
+        class="flex flex-col items-center h-full justify-center mx-5 lg:mx-24 mt-6 mb-9 gap-3 lg:gap-10 md:flex-row md:items-start xl:mx-40 3xl:mx-80"
+      >
+        <img
+          src="https://svgshare.com/i/j5x.svg"
+          title="cookie"
+          class="self-start w-7 md:w-10"
+        />
+        <div class="flex flex-col max-w-[850px] gap-3 font-normal">
+          <p class="">
+            Мы используем Cookie файлы, чтобы адаптировать предложения в
+            соотвествии с вашими потребностями и обеспечить максимальное
+            удобство при взаимодействии с сайтом.
+          </p>
+          <p>
+            <a href="#" class="text-blue font-bold"
+              >Узнать больше об использовании cookie файлов.</a
+            >
+            Продолжая пользоваться сайтом, вы соглашаетесь с использованием
+            cookie файлов.
+          </p>
+        </div>
+        <button class="button button-shake button-cookie">
+          ПРИНЯТЬ И ЗАКРЫТЬ
+        </button>
+      </div>
+    </div>
+    <div
+      class="cart-modal fixed z-[120] overflow-auto bg-modal-background w-full h-full hidden"
+    >
+      <div
+        class="bg-white absolute left-1/2 top-1/2 translate-y-[-50%] translate-x-[-50%] w-[1302px]"
+      >
+        <h1>cart</h1>
       </div>
     </div>
   </body>
