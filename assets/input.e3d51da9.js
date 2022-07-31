@@ -28,4 +28,4 @@
       })),
       (self[o].moduleMap = {});
   }
-})("./..assets/");
+})("./../assets/");
