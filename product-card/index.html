@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     
+    
+    
     <title>Vite App</title>
-  <script type="module" crossorigin src="assets/product-card.892ddf2d.js"></script>
-  <link rel="modulepreload" href="assets/input.f979339b.js">
-  <link rel="modulepreload" href="assets/vendor.4cf36dfc.js">
-  <link rel="stylesheet" href="assets/input.5ecc99e8.css">
-  <link rel="stylesheet" href="assets/product-card.d918b104.css">
+  <script type="module" crossorigin src="./..assets/product-card.233216d9.js"></script>
+  <link rel="modulepreload" href="./..assets/input.e3d51da9.js">
+  <link rel="modulepreload" href="./..assets/shaking-buttons.20fdc68d.js">
+  <link rel="modulepreload" href="./..assets/vendor.514feca6.js">
+  <link rel="modulepreload" href="./..assets/product-swiper.05d300b5.js">
+  <link rel="stylesheet" href="./..assets/input.dcf84207.css">
+  <link rel="stylesheet" href="./..assets/product-swiper.0b2023d9.css">
+  <link rel="stylesheet" href="./..assets/swiper.4caa3306.css">
 </head>
 
   <body>
@@ -56,11 +61,11 @@
           </a>
         </div>
         <a
-          href="#"
+          href="./../"
           class="absolute mx-auto left-0 right-0 w-[61px] h-[52px] md:w-[89px] md:h-[76px]"
         >
           <img
-            src="assets/logo-blue.48c039e5.svg"
+            src="./..assets/logo-blue.48c039e5.svg"
             alt="blue logo"
             class="w-full h-full"
           />
@@ -104,12 +109,12 @@
         </button>
       </div>
     </nav>
-    <section class="lg:px-[104px] xl:px-40 2xl:px-80 xs:mt-8 mt-7 px-5">
+    <section class="lg:px-[104px] xl:px-40 2xl:px-80 xs:mt-8 mt-7 px-5 mb-14">
       <div>
         <button
           class="uppercase flex rounded-[30px] border-2 border-black items-center"
         >
-          <img src="src/img/arrow-left.svg" /><span class="pr-2 block">
+          <img src="./..assets/arrow-left.5412ad21.svg" /><span class="pr-2 block">
             Назад
           </span>
         </button>
@@ -118,13 +123,13 @@
             <div class="swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="assets/t-shirt.d1406669.png" alt="tshirt" />
+                  <img src="./..assets/t-shirt.d1406669.png" alt="tshirt" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/t-shirt.d1406669.png" alt="tshirt" />
+                  <img src="./..assets/t-shirt.d1406669.png" alt="tshirt" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/t-shirt.d1406669.png" alt="tshirt" />
+                  <img src="./..assets/t-shirt.d1406669.png" alt="tshirt" />
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -203,15 +208,59 @@
                 >
                   <span>Кол-во</span>
                   <div class="flex items-center w-[86px] justify-between">
-                    <button><img src="assets/arrow-left.5412ad21.svg" /></button>
+                    <button><img src="./..assets/arrow-left.5412ad21.svg" /></button>
                     <span>1</span>
-                    <button><img src="assets/arrow-right.536e7730.svg" /></button>
+                    <button><img src="./..assets/arrow-right.536e7730.svg" /></button>
                   </div>
                 </div>
               </div>
               <div class="flex items-center gap-1 justify-center">
                 <h4>13 000 ₽</h4>
-                <p class="text_base">13 000 ₽</p>
+                <p class="text_base text-grey line-through">13 000 ₽</p>
+              </div>
+              <button
+                class="button button-buy h-[46px] focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] flex button-shake mt-3 w-full lg:w-[88%] lg:mx-auto"
+              >
+                В корзину
+              </button>
+              <div class="flex items-start mb-6">
+                <button
+                  class="flex-1 text-left text-xl border-b-2 border-black pb-3"
+                >
+                  Обзор
+                </button>
+                <button class="flex-1 text-left text-xl">Характеристики</button>
+              </div>
+              <div class="flex flex-col lg:flex-row font-normal gap-3">
+                <p class="pl-10 pr-5 py-8 rounded-[30px] bg-grey">
+                  Стандартная футболка и самая главная гордость Kirill
+                  Karavaev®, дорабатывалась больше 10 раз, доведённая нашими
+                  конструкторами почти до совершенства. Выполненная из мягкой и
+                  приятной ткани на основе натурального турецкого хлопка.
+                  Базовый элемент гардероба, который будет уместен в любых
+                  ситуациях.
+                </p>
+                <div
+                  class="pl-10 pr-5 py-8 rounded-[30px] bg-grey text-darkestGrey"
+                >
+                  <div class="mb-6 flex gap-2">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGoSURBVHgBtZW9TsMwFIUPBQnxJxyBxEgYkJhQR8bwBIQNFhKeIDMTfoOGN4AnCB2ZoBNjy9YFHGCh4ieRKBJUqsy9SYMKEi1twyedG9uyjq+uHRv4HUHySAFJkXRH3D4nOSQTA8CG0jCMyPM8HQSBVkrpjGq1mow5jpMtJP9ianJGtm3rKIp0P3jBzgIKPbJPTH3f14MipexprnjCsJRKpcxcdJtK13X1qHAJyeuwuwTfNmhYeF940znrCQqWKLqQFyZGR2B+fU9ElSOHjZ14aQsnl8iHSYvCkVUAl2LWRG4sFDkWU+O0kw9zJkezgH+CjUO8hsiNpxrHkI1reKkhN5phYsyn4sJUJ7Y1HSMPTq/LIKfjMWoLYxzqZg1CjGMkwhawUk+aK1yKOGrD37/HyMhG+uE1shyv6h/YEQWIjRkMhXyg3+KZDgKwzf3M+J1UPmvCpqtbWLMYCP8ROGgkppukuNsYnYFy5Q32bQuiOEXF71PzuA3s3n1lyqYh+sBXn3YN6GAZuroKrddTqbV0zFuENgqIOnMFBsAkuUgfzp+PKT+wXi/DT7SgtH+/zrULAAAAAElFTkSuQmCC"
+                      alt="russia"
+                      class="w-5 h-5"
+                    /><span class="text-black uppercase text-sm"
+                      >Сделано в России</span
+                    >
+                  </div>
+                  <p>
+                    Стандартная футболка и самая главная гордость Kirill
+                    Karavaev®, дорабатывалась больше 10 раз, доведённая нашими
+                    конструкторами почти до совершенства. Выполненная из мягкой
+                    и приятной ткани на основе натурального турецкого хлопка.
+                    Базовый элемент гардероба, который будет уместен в любых
+                    ситуациях.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -251,11 +300,11 @@
     <footer
       class="bg-black pt-[70px] md:pt-[140px] 3xl:pt-[100px] pb-[70px] md:pb-8 pl-[18px] md:px-[105px] xl:px-40 3xl:px-[15.7vw]"
     >
-      <div>
+      <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
         <div class="flex flex-col lg:flex-row justify-between relative">
           <div class="flex flex-col mb-12">
             <img
-              src="assets/logo-white.95369d9c.svg"
+              src="./..assets/logo-white.95369d9c.svg"
               alt="logo-white"
               class="w-[87px] h-[73px] md:w-[103px] md:h-[88px]"
             />
@@ -336,10 +385,16 @@
             <ul
               class="text_5 text_5-hover flex flex-col gap-5 lg:gap-7 xl:gap-10 mt-9 lg:mt-12"
             >
-              <li><a href="#">Обмен и возврат</a></li>
-              <li><a href="#">Размеры и стирка</a></li>
-              <li><a href="#">Политика конфиденциальности</a></li>
-              <li><a href="#">Гарантия безопасности платежей</a></li>
+              <li><a href="./../refund/">Обмен и возврат</a></li>
+              <li><a href="./../washing/">Размеры и стирка</a></li>
+              <li>
+                <a href="./../privacy-policy/">Политика конфиденциальности</a>
+              </li>
+              <li>
+                <a href="./../payment-guarantee/"
+                  >Гарантия безопасности платежей</a
+                >
+              </li>
             </ul>
           </div>
           <div class="flex flex-col text-white flex-[0_0_220px] lg:mt-5">
@@ -347,9 +402,9 @@
             <ul
               class="text_5 text_5-hover flex flex-col gap-5 lg:gap-7 xl:gap-10 mt-9 lg:mt-12"
             >
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Оплата</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="./../delivery/">Доставка</a></li>
+              <li><a href="./../payment/">Оплата</a></li>
+              <li><a href="./../contacts/">Контакты</a></li>
             </ul>
           </div>
         </div>
@@ -357,7 +412,7 @@
           <div
             class="flex justify-start items-center gap-1 uppercase text-white sm:justify-center mt-12 md:mt-16 3xl:mt-14"
           >
-            <img src="assets/TM.70fc3911.svg" alt="TM" />
+            <img src="./..assets/TM.70fc3911.svg" alt="TM" />
             <p class="text_2 regular">Papa Goose. Все права защищены</p>
           </div>
         </div>
