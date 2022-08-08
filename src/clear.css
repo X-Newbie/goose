@@ -32,12 +32,12 @@
   background-position: 4px 1px;
 }
 
-.select-container {
+.select-container-city {
   position: relative;
 }
 
-.select-container:after {
-  top: 50px;
+.select-container-city:after {
+  top: 40px;
   left: 87%;
   content: "";
   display: block;
@@ -45,11 +45,23 @@
   width: 16px;
   height: 9px;
   position: absolute;
+  transition: all 0.2s;
+  transform: rotate(var(--city-arrow-rotate));
 }
 
-.select-container select {
-  background: none;
-  border: none;
-  appearance: none;
-  border: solid 1px #141414;
+.select-container-delivery {
+  position: relative;
+}
+
+.select-container-delivery:after {
+  top: 40px;
+  left: 87%;
+  content: "";
+  display: block;
+  background: url("./img/arrow-bottom.svg") no-repeat;
+  width: 16px;
+  height: 9px;
+  position: absolute;
+  transition: all 0.2s;
+  transform: rotate(var(--delivery-arrow-rotate));
 }

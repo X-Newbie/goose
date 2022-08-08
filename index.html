@@ -9,16 +9,21 @@
     
     
     
+    
+    
     <title>Vite App</title>
-  <script type="module" crossorigin src="assets/main.833488e3.js"></script>
-  <link rel="modulepreload" href="assets/input.e3d51da9.js">
-  <link rel="modulepreload" href="assets/vendor.514feca6.js">
-  <link rel="modulepreload" href="assets/product-swiper.05d300b5.js">
-  <link rel="modulepreload" href="assets/shaking-buttons.20fdc68d.js">
-  <link rel="modulepreload" href="assets/modal.6bce8ba3.js">
-  <link rel="stylesheet" href="assets/input.dcf84207.css">
-  <link rel="stylesheet" href="assets/product-swiper.0b2023d9.css">
+  <script type="module" crossorigin src="assets/main.acf3d1b7.js"></script>
+  <link rel="modulepreload" href="assets/input.655a1f2d.js">
+  <link rel="modulepreload" href="assets/vendor.7779e7f7.js">
+  <link rel="modulepreload" href="assets/shaking-buttons.a25734bd.js">
+  <link rel="modulepreload" href="assets/product-card.fe522015.js">
+  <link rel="modulepreload" href="assets/modal.1489b151.js">
+  <link rel="modulepreload" href="assets/cart.286e29f4.js">
+  <link rel="stylesheet" href="assets/input.16537a07.css">
+  <link rel="stylesheet" href="assets/product-card.d918b104.css">
+  <link rel="stylesheet" href="assets/cart.bb7445cb.css">
   <link rel="stylesheet" href="assets/main.fb71591c.css">
+  <link rel="stylesheet" href="assets/swiper.459133db.css">
 </head>
 
   <body class="relative">
@@ -75,8 +80,7 @@
           />
         </a>
         <button
-          class="flex circle items-center justify-center relative group"
-          onclick="window.location.href = './preorder/';"
+          class="flex circle items-center justify-center relative group open-cart"
         >
           <span
             class="text-white absolute right-[50px] h-10 w-[91px] bg-black rounded-md hidden group-hover:block after:content-[' '] after:bg-black after:w-2.5 after:h-2.5 after:rounded-sm after:absolute after:left-[85px] after:rotate-45 after:mt-3.5 animate-opacity"
@@ -272,13 +276,13 @@
                   class="max-w-[155px] h-[150px] mt-7 md:h-full md:max-w-full"
                 />
                 <p
-                  class="button mb-6 line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3 h-full pt-9"
+                  class="button mb-6 line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3 h-full pt-3 lg:pt-9"
                 >
                   Футболка “Храни тебя гУсь!”
                 </p>
                 <p class="button mb-3">3 000 ₽</p>
                 <button
-                  class="button button-buy focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake"
+                  class="button w-[calc(100%-40px)] xl:w-[calc(100%-80px)] 2xl:w-[calc(100%-140px)] button-buy focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake card-modal-open"
                 >
                   В корзину
                 </button>
@@ -295,13 +299,13 @@
                   class="max-w-[155px] h-[150px] mt-7 md:h-full md:max-w-full"
                 />
                 <p
-                  class="button mb-6 line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3 h-full pt-9"
+                  class="button mb-6 line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3 h-full pt-3 lg:pt-9"
                 >
                   Футболка “Храни тебя гУсь!”
                 </p>
                 <p class="button mb-3">3 000 ₽</p>
                 <button
-                  class="button button-buy h-[46px] focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake"
+                  class="button w-[calc(100%-40px)] xl:w-[calc(100%-80px)] 2xl:w-[calc(100%-140px)] button-buy h-[46px] focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake card-modal-open"
                 >
                   В корзину
                 </button>
@@ -321,7 +325,7 @@
                   class="max-w-[155px] h-[150px] mt-7 md:h-full md:max-w-full"
                 />
                 <p
-                  class="button mb-6 line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3 h-full pt-9"
+                  class="button mb-6 line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3 h-full pt-3 lg:pt-9"
                 >
                   Футболка “Храни тебя гУсь!”
                 </p>
@@ -332,7 +336,7 @@
                   >
                 </p>
                 <button
-                  class="button button-buy h-[46px] focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake font-bold"
+                  class="button w-[calc(100%-40px)] xl:w-[calc(100%-80px)] 2xl:w-[calc(100%-140px)] button-buy h-[46px] focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake font-bold card-modal-open"
                 >
                   В корзину
                 </button>
@@ -349,13 +353,13 @@
                   class="max-w-[155px] h-[150px] mt-7 md:h-full md:max-w-full"
                 />
                 <p
-                  class="button mb-6 line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3 h-full pt-9"
+                  class="button mb-6 line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3 h-full pt-3 lg:pt-9"
                 >
                   Футболка “Храни тебя гУсь!”
                 </p>
                 <p class="button mb-3">3 000 ₽</p>
                 <button
-                  class="button button-buy h-[46px] focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake"
+                  class="button w-[calc(100%-40px)] xl:w-[calc(100%-80px)] 2xl:w-[calc(100%-140px)] button-buy h-[46px] focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake card-modal-open"
                 >
                   В корзину
                 </button>
@@ -372,13 +376,13 @@
                   class="max-w-[155px] h-[150px] mt-7 md:h-full md:max-w-full"
                 />
                 <p
-                  class="button mb-6 line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3 h-full pt-9"
+                  class="button mb-6 line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3 h-full pt-3 lg:pt-9"
                 >
                   Футболка “Храни тебя гУсь!”
                 </p>
                 <p class="button mb-3">3 000 ₽</p>
                 <button
-                  class="button button-buy h-[46px] focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake"
+                  class="button w-[calc(100%-40px)] xl:w-[calc(100%-80px)] 2xl:w-[calc(100%-140px)] button-buy h-[46px] focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake card-modal-open"
                 >
                   В корзину
                 </button>
@@ -395,13 +399,13 @@
                   class="max-w-[155px] h-[150px] mt-7 md:h-full md:max-w-full"
                 />
                 <p
-                  class="button mb-6 line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3 h-full pt-9"
+                  class="button mb-6 line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3 h-full pt-3 lg:pt-9"
                 >
                   Футболка “Храни тебя гУсь!”
                 </p>
                 <p class="button mb-3">3 000 ₽</p>
                 <button
-                  class="button button-buy h-[46px] focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake"
+                  class="button w-[calc(100%-40px)] xl:w-[calc(100%-80px)] 2xl:w-[calc(100%-140px)] button-buy h-[46px] focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake card-modal-open"
                 >
                   В корзину
                 </button>
@@ -409,7 +413,7 @@
             </div>
             <div class="flex justify-center mt-9">
               <button
-                class="button button-buy sm:w-[266px] h-[46px] mb-0 focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat bg-[length:167px_48px] bg-white button-shake button-show-more w-52 flex items-center"
+                class="button rounded-[23px] border-black border-2 shadow-btn shadow-black text-center py-[10px] justify-center sm:w-[266px] h-[46px] mb-0 focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat bg-[length:167px_48px] bg-white button-shake button-show-more w-52 flex items-center"
               >
                 показать ещё
               </button>
@@ -444,33 +448,36 @@
                     Информация о доставке
                   </h2>
                   <div class="flex flex-col gap-[31px]">
-                    <button
+                    <a
                       class="button-info flex justify-between items-center active:hover:shadow-none md:hover:shadow-none"
+                      href="/delivery/"
                       data-aos="fade-up"
                       data-aos-delay="1000"
                       data-aos-duration="1000"
                     >
                       <span>Доставка</span>
                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVHgBtVU7boNAEF0+4lchoElHOpcpU+IuZdKli2/g3MCmTOfcIDdxfAKbLqlCmZI0QCQ+eSMtEopkw+L1k1Y7sLPzZmZnZzUmCM/zlo7jXBVF8TFGX2ECcF33Rtf1PcSsqqrrDBjaozEBlGX5De8jiDNVVX/zPH8f2qMyccR8XiKikF0CQRBsMVqah3SFUtTBMIydoigLjBlSxpCqnVQCnEUGw58geMRndIpkEgGByhSGqQojGrZth6ZpJkQuhYBAVQTDCcQ7RHOLcQ/SDORJpyN0D46BqknTtC0IQvpu2/atrusY1yRV+OIeiy6Tjzkuph6SE0wyEEWGKNKzU4QMuHByBfG5M4xsvKKVbKiV6OwMdLmHGPJfMbze9HvU5Aj6BwuvUxh+gN3Df73JEcD4mlfNAcbnYzrraPi+v6BehPnrIg2PDHOCJyYbfe/H6E95D1Z8XjPZoCdTxHuC8JNpWdZP0zQvJI/Z8wdmy5XXlFm4ygAAAABJRU5ErkJggg==" alt="Arrow right" />
-                    </button>
-                    <button
+                    </a>
+                    <a
                       class="button-info flex justify-between items-center active:hover:shadow-none md:hover:shadow-none"
+                      href="/payment/"
                       data-aos="fade-up"
                       data-aos-delay="1000"
                       data-aos-duration="1000"
                     >
                       <span>Оплата</span>
                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVHgBtVU7boNAEF0+4lchoElHOpcpU+IuZdKli2/g3MCmTOfcIDdxfAKbLqlCmZI0QCQ+eSMtEopkw+L1k1Y7sLPzZmZnZzUmCM/zlo7jXBVF8TFGX2ECcF33Rtf1PcSsqqrrDBjaozEBlGX5De8jiDNVVX/zPH8f2qMyccR8XiKikF0CQRBsMVqah3SFUtTBMIydoigLjBlSxpCqnVQCnEUGw58geMRndIpkEgGByhSGqQojGrZth6ZpJkQuhYBAVQTDCcQ7RHOLcQ/SDORJpyN0D46BqknTtC0IQvpu2/atrusY1yRV+OIeiy6Tjzkuph6SE0wyEEWGKNKzU4QMuHByBfG5M4xsvKKVbKiV6OwMdLmHGPJfMbze9HvU5Aj6BwuvUxh+gN3Df73JEcD4mlfNAcbnYzrraPi+v6BehPnrIg2PDHOCJyYbfe/H6E95D1Z8XjPZoCdTxHuC8JNpWdZP0zQvJI/Z8wdmy5XXlFm4ygAAAABJRU5ErkJggg==" alt="Arrow right" />
-                    </button>
-                    <button
+                    </a>
+                    <a
                       class="button-info flex justify-between items-center active:hover:shadow-none md:hover:shadow-none"
+                      href="/refund/"
                       data-aos="fade-up"
                       data-aos-delay="1000"
                       data-aos-duration="1000"
                     >
                       <span>Обмен и возврат</span>
                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVHgBtVU7boNAEF0+4lchoElHOpcpU+IuZdKli2/g3MCmTOfcIDdxfAKbLqlCmZI0QCQ+eSMtEopkw+L1k1Y7sLPzZmZnZzUmCM/zlo7jXBVF8TFGX2ECcF33Rtf1PcSsqqrrDBjaozEBlGX5De8jiDNVVX/zPH8f2qMyccR8XiKikF0CQRBsMVqah3SFUtTBMIydoigLjBlSxpCqnVQCnEUGw58geMRndIpkEgGByhSGqQojGrZth6ZpJkQuhYBAVQTDCcQ7RHOLcQ/SDORJpyN0D46BqknTtC0IQvpu2/atrusY1yRV+OIeiy6Tjzkuph6SE0wyEEWGKNKzU4QMuHByBfG5M4xsvKKVbKiV6OwMdLmHGPJfMbze9HvU5Aj6BwuvUxh+gN3Df73JEcD4mlfNAcbnYzrraPi+v6BehPnrIg2PDHOCJyYbfe/H6E95D1Z8XjPZoCdTxHuC8JNpWdZP0zQvJI/Z8wdmy5XXlFm4ygAAAABJRU5ErkJggg==" alt="Arrow right" />
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -601,13 +608,27 @@
                       </svg>
                     </a>
                   </div>
+                  <div
+                    class="flex flex-col gap-2.5 md:flex-row md:justify-between items-center"
+                  >
+                    <h5 class="md:text-center">Адрес:</h5>
+                    <div
+                      class="text-center md:text-left md:h-11 w-[228px] md:w-[237px] regular text-base lg:text-xl"
+                    >
+                      <p class="">г. Волгоград, Канунникова 6, офис 216</p>
+                      <p class="mt-2">
+                        10:00-19:00 <br class="md:hidden" />
+                        Без выходных
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </section>
         </main>
         <footer
-          class="bg-black pt-[70px] md:pt-[140px] 3xl:pt-[100px] pb-[70px] md:pb-8 pl-[18px] md:px-[105px] xl:px-40 3xl:px-[15.7vw]"
+          class="bg-black pt-[70px] md:pt-[140px] lg:pt-7 pb-[70px] md:pb-8 pl-[18px] md:px-[105px] xl:px-40 3xl:px-[15.7vw]"
         >
           <div
             data-aos="fade-up"
@@ -615,15 +636,15 @@
             data-aos-duration="1000"
           >
             <div class="flex flex-col lg:flex-row justify-between relative">
-              <div class="flex flex-col mb-12">
+              <div class="">
                 <img
                   src="assets/logo-white.95369d9c.svg"
                   alt="logo-white"
                   class="w-[87px] h-[73px] md:w-[103px] md:h-[88px]"
                 />
-                <div class="flex flex-col gap-2.5 md:gap-5">
+                <div class="flex flex-col h-[188px] justify-between mt-7">
                   <a
-                    class="flex items-center text_5 md:font-bold mt-7 md:mt-9 text-w hite group"
+                    class="flex items-center text-base md:font-bold text-w hite group"
                     href="tel:+79061710200"
                   >
                     <svg
@@ -640,12 +661,13 @@
                         stroke-miterlimit="10"
                       />
                     </svg>
-                    <span class="ml-2 group-hover:!text-yellow text-white"
+                    <span
+                      class="text-base ml-2 group-hover:!text-yellow text-white bold"
                       >8-906-171-02-00</span
                     >
                   </a>
                   <a
-                    class="flex text-white items-center md:font-bold text_5 group md:mt-7"
+                    class="flex text-white items-center md:font-bold text-base group"
                     href="mailto:Zykov@pandasmm.ru"
                   >
                     <svg
@@ -669,11 +691,11 @@
                         stroke-linejoin="round"
                       />
                     </svg>
-                    <span class="ml-2 group-hover:!text-yellow"
+                    <span class="ml-2 group-hover:!text-yellow bold text-base"
                       >papa_goose@</span
                     >
                   </a>
-                  <a href="https://pandasmm.ru/" class="md:mt-4"
+                  <a href="https://pandasmm.ru/" class=""
                     ><button
                       class="circle w-10 h-10 md:w-11 md:h-11 flex items-center group justify-center border-white hover:border-yellow hover:bg-yellow hover-yellow bg-black"
                     >
@@ -691,14 +713,20 @@
                         />
                       </svg></button
                   ></a>
+                  <div>
+                    <p class="light text-white">
+                      г. Волгоград, Канунникова 6, офис 216
+                    </p>
+                    <p class="light text-white">10:00-19:00 Без выходных</p>
+                  </div>
                 </div>
               </div>
               <div
                 class="flex flex-col text-white lg:mt-5 lg:absolute lg:left-[calc(50%-140px)]"
               >
-                <h5 class="bold text-2xl">О нас</h5>
+                <h5 class="bold text-2xl lg:text-xl mt-14 lg:mt-0">О нас</h5>
                 <ul
-                  class="text_5 text_5-hover flex flex-col gap-5 lg:gap-7 xl:gap-10 mt-9 lg:mt-12"
+                  class="text-base text-base-hover flex flex-col gap-5 lg:gap-3 mt-7 lg:mt-4 light"
                 >
                   <li><a href="./refund/">Обмен и возврат</a></li>
                   <li><a href="./washing/">Размеры и стирка</a></li>
@@ -712,10 +740,12 @@
                   </li>
                 </ul>
               </div>
-              <div class="flex flex-col text-white flex-[0_0_220px] lg:mt-5">
-                <h5 class="bold text-2xl mt-12 lg:mt-0">Клиентам</h5>
+              <div
+                class="flex flex-col text-white flex-[0_0_220px] mt-12 lg:mt-5"
+              >
+                <h5 class="bold text-2xl lg:text-xl">Клиентам</h5>
                 <ul
-                  class="text_5 text_5-hover flex flex-col gap-5 lg:gap-7 xl:gap-10 mt-9 lg:mt-12"
+                  class="text-base text-base-hover flex flex-col gap-5 lg:gap-3 mt-7 lg:mt-4 light"
                 >
                   <li><a href="./delivery/">Доставка</a></li>
                   <li><a href="./payment/">Оплата</a></li>
@@ -725,10 +755,10 @@
             </div>
             <div>
               <div
-                class="flex justify-start items-center gap-1 uppercase text-white sm:justify-center mt-12 md:mt-16 3xl:mt-14"
+                class="flex justify-start items-center gap-1 uppercase text-white sm:justify-center mt-12 md:mt-16 xl:mt-12"
               >
                 <img src="assets/TM.70fc3911.svg" alt="TM" />
-                <p class="text_2 regular">Papa Goose. Все права защищены</p>
+                <p class="text-sm light">Papa Goose. Все права защищены</p>
               </div>
             </div>
           </div>
@@ -765,171 +795,919 @@
         </button>
       </div>
     </div>
-    <div class="cart-modal">
+    <div class="flex justify-center">
       <div
-        class="bg-white w-[1302px] cart-modal-content rounded-[30px] pt-20 pb-24 px-11"
+        class="shadow shadow-black px-5 fixed bottom-0 z-[130] rounded-t-[30px] bg-white justify-center items-center text-sm md:text-base cloth-size-modal top-[105vh] overflow-y-scroll scrollbar-off lg:px-[88px] mx-auto w-full lg:max-w-[72vw] xl:max-w-[1078px]"
       >
-        <button class="fixed top-11 right-11 circle modal-close">
-          <img
-            src="assets/close.afad9fc6.svg"
-            alt="close"
-            class="w-[30px] h-[30px]"
-          />
+        <div class="relative h-11 mt-[14px] lg:mt-12">
+          <button
+            class="text-right right-0 lg:right-2 circle cloth-size-modal-close hover:bg-black group absolute"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.3332 2.5465L17.4532 0.666504L9.99984 8.11984L2.5465 0.666504L0.666504 2.5465L8.11984 9.99984L0.666504 17.4532L2.5465 19.3332L9.99984 11.8798L17.4532 19.3332L19.3332 17.4532L11.8798 9.99984L19.3332 2.5465Z"
+                class="group-hover:fill-white"
+              />
+            </svg>
+          </button>
+        </div>
+        <h4 class="uppercase mt-4 lg:mt-1 lg:ml-6">Подобрать размер</h4>
+        <div class="mt-4 mx-auto">
+          <picture>
+            <source
+              media="(min-width: 1920px)"
+              srcset="./src/img/washingGuide1920.svg"
+            />
+            <source
+              media="(min-width: 1600px)"
+              srcset="./src/img/washingGuide1600.svg"
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="./src/img/washingGuide1440.svg"
+            />
+            <source
+              media="(min-width: 450px)"
+              srcset="./src/img/washingGuide1200.svg"
+            />
+            <img
+              src="assets/washingGuide320.f1a63bd7.svg"
+              alt="washing guide"
+              class="mx-auto"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
+    <div class="card-modal modal">
+      <div
+        class="bg-white card-modal-content rounded-[30px] pt-20 pb-24 px-11 h-fit lg:h-[82.5vh] xl:h-[78vh] 2xl:h-[87vh] overflow-hidden"
+      >
+        <button
+          class="fixed top-11 right-11 circle card-modal-close hover:bg-black group"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.3332 2.5465L17.4532 0.666504L9.99984 8.11984L2.5465 0.666504L0.666504 2.5465L8.11984 9.99984L0.666504 17.4532L2.5465 19.3332L9.99984 11.8798L17.4532 19.3332L19.3332 17.4532L11.8798 9.99984L19.3332 2.5465Z"
+              class="group-hover:fill-white"
+            />
+          </svg>
         </button>
-        <div class="">
-          <div>
-            <div class="flex">
-              <!-- <div class="flex-1">
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="./../src/img/t-shirt.png" alt="tshirt" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./../src/img/t-shirt.png" alt="tshirt" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./../src/img/t-shirt.png" alt="tshirt" />
-                    </div>
+        <div class="flex lg:gap-16 3xl:gap-24">
+          <div class="lg:flex">
+            <div
+              class="swiper-container hidden xs:flex xs:flex-row-reverse h-[424px] xl:h-[490px] w-auto"
+            >
+              <div class="swiper product-img w-[95%]">
+                <div class="swiper-wrapper slider-preview">
+                  <div class="swiper-slide">
+                    <img
+                      src="./../src/img/t-short-card.png"
+                      alt="tshirt"
+                      class="h-full w-full"
+                    />
                   </div>
-                  <div class="swiper-pagination"></div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./../src/img/t-short-card.png"
+                      alt="tshirt"
+                      class="h-full w-full"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./../src/img/t-short-card.png"
+                      alt="tshirt"
+                      class="h-full w-full"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./../src/img/t-short-card.png"
+                      alt="tshirt"
+                      class="h-full w-full"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./../src/img/t-short-card.png"
+                      alt="tshirt"
+                      class="h-full w-full"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./../src/img/t-short-card.png"
+                      alt="tshirt"
+                      class="h-full w-full"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./../src/img/t-short-card.png"
+                      alt="tshirt"
+                      class="h-full w-full"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./../src/img/t-short-card.png"
+                      alt="tshirt"
+                      class="h-full w-full"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./../src/img/t-short-card.png"
+                      alt="tshirt"
+                      class="h-full w-full"
+                    />
+                  </div>
                 </div>
-              </div> -->
-              <!-- <div class="mt-9">
-                <h2 class="body_text font-bold uppercase">
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="swiper product-thumbs w-24">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide h-full">
+                    <img
+                      src="./../src/img/t-shirt.png"
+                      alt="tshirt"
+                      class="w-full h-[98px]"
+                    />
+                  </div>
+                  <div class="swiper-slide h-full">
+                    <img
+                      src="./../src/img/t-shirt.png"
+                      alt="tshirt"
+                      class="w-full h-[98px]"
+                    />
+                  </div>
+                  <div class="swiper-slide h-full">
+                    <img
+                      src="./../src/img/t-shirt.png"
+                      alt="tshirt"
+                      class="w-full h-[98px]"
+                    />
+                  </div>
+                  <div class="swiper-slide h-full">
+                    <img
+                      src="./../src/img/t-shirt.png"
+                      alt="tshirt"
+                      class="w-full h-[98px]"
+                    />
+                  </div>
+                  <div class="swiper-slide h-full">
+                    <img
+                      src="./../src/img/t-shirt.png"
+                      alt="tshirt"
+                      class="w-full h-[98px]"
+                    />
+                  </div>
+                  <div class="swiper-slide h-full">
+                    <img
+                      src="./../src/img/t-shirt.png"
+                      alt="tshirt"
+                      class="w-full h-[98px]"
+                    />
+                  </div>
+                  <div class="swiper-slide h-full">
+                    <img
+                      src="./../src/img/t-shirt.png"
+                      alt="tshirt"
+                      class="w-full h-[98px]"
+                    />
+                  </div>
+                  <div class="swiper-slide h-full">
+                    <img
+                      src="./../src/img/t-shirt.png"
+                      alt="tshirt"
+                      class="w-full h-[98px]"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[430px] 2xl:w-[594px]">
+            <div class="flex items-start w-80 mt-5">
+              <button
+                class="flex-1 text-left text-xl pb-3 tab-button review-button active"
+              >
+                Обзор
+              </button>
+              <button
+                class="flex-1 text-left text-xl pb-3 tab-button specifications-button"
+              >
+                Характеристики
+              </button>
+            </div>
+            <div
+              class="font-normal gap-3 review tab active border-lightGray mt-[-2px] border-t-2 overflow-product-card"
+            >
+              <div>
+                <h2 class="body_text font-bold uppercase lg:text-center mt-10">
                   Футболка “Храни тебя гУсь!”
                 </h2>
-                <p class="mt-7">Размер футболки</p>
+                <p class="mt-8 bold">Размер футболки</p>
                 <div class="mt-6 border-b border-grey pb-5">
                   <p>Женские</p>
-                  <div class="flex flex-wrap gap-3 mt-2">
-                    <div class="badge">
-                      <button class="flex justify-between w-full gap-3">
+                  <div class="flex flex-wrap gap-3 mt-2 ml-[2px]">
+                    <div class="badge-container relative">
+                      <input
+                        type="radio"
+                        name="t-shirt-size"
+                        class="w-full opacity-0 peer h-full absolute inset-0 m-auto inline-block"
+                      />
+                      <div
+                        class="badge w-full h-full peer-checked:shadow-badge-active peer-hover:bg-[#E5EDFC] justify-between flex font-bold text-xl"
+                      >
                         <span>XS</span><span>40</span>
-                      </button>
+                      </div>
                     </div>
-                    <div class="badge">
-                      <button class="flex justify-between w-full gap-3">
+                    <div class="badge-container relative">
+                      <input
+                        type="radio"
+                        name="t-shirt-size"
+                        class="w-full opacity-0 peer h-full absolute inset-0 m-auto inline-block"
+                      />
+                      <div
+                        class="badge w-full h-full peer-checked:shadow-badge-active peer-hover:bg-[#E5EDFC] justify-between flex font-bold text-xl"
+                      >
                         <span>S</span><span>42</span>
-                      </button>
+                      </div>
                     </div>
-                    <div class="badge">
-                      <button class="flex justify-between w-full gap-3">
+                    <div class="badge-container relative">
+                      <input
+                        type="radio"
+                        name="t-shirt-size"
+                        class="w-full opacity-0 peer h-full absolute inset-0 m-auto inline-block"
+                      />
+                      <div
+                        class="badge w-full h-full peer-checked:shadow-badge-active peer-hover:bg-[#E5EDFC] justify-between flex font-bold text-xl"
+                      >
                         <span>M</span><span>44</span>
-                      </button>
+                      </div>
                     </div>
-                    <div class="badge">
-                      <button class="flex justify-between w-full gap-3">
+                    <div class="badge-container relative">
+                      <input
+                        type="radio"
+                        name="t-shirt-size"
+                        class="w-full opacity-0 peer h-full absolute inset-0 m-auto inline-block"
+                      />
+                      <div
+                        class="badge w-full h-full peer-checked:shadow-badge-active peer-hover:bg-[#E5EDFC] justify-between flex font-bold text-xl"
+                      >
                         <span>L</span><span>46</span>
-                      </button>
+                      </div>
                     </div>
-                    <div class="badge">
-                      <button class="flex justify-between w-full gap-3">
+                    <div class="badge-container relative">
+                      <input
+                        type="radio"
+                        name="t-shirt-size"
+                        class="w-full opacity-0 peer h-full absolute inset-0 m-auto inline-block"
+                      />
+                      <div
+                        class="badge w-full h-full peer-checked:shadow-badge-active peer-hover:bg-[#E5EDFC] justify-between flex font-bold text-xl"
+                      >
                         <span>S</span><span>42</span>
-                      </button>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="mt-5 border-b border-grey pb-5">
                   <p class="mb-2">Мужские</p>
-                  <div class="flex flex-wrap gap-3">
-                    <div class="badge">
-                      <button class="flex justify-between w-full gap-3">
-                        <span>XS</span><span>40</span>
-                      </button>
+                  <div class="flex flex-wrap gap-3 ml-[2px]">
+                    <div class="badge-container relative">
+                      <input
+                        type="radio"
+                        name="t-shirt-size"
+                        class="w-full opacity-0 peer h-full absolute inset-0 m-auto inline-block"
+                      />
+                      <div
+                        class="badge w-full h-full peer-checked:shadow-badge-active peer-hover:bg-[#E5EDFC] justify-between flex font-bold text-xl"
+                      >
+                        <span>S</span><span>46</span>
+                      </div>
                     </div>
-                    <div class="badge">
-                      <button class="flex justify-between w-full gap-3">
-                        <span>S</span><span>42</span>
-                      </button>
+                    <div class="badge-container relative">
+                      <input
+                        type="radio"
+                        name="t-shirt-size"
+                        class="w-full opacity-0 peer h-full absolute inset-0 m-auto inline-block"
+                      />
+                      <div
+                        class="badge w-full h-full peer-checked:shadow-badge-active peer-hover:bg-[#E5EDFC] justify-between flex font-bold text-xl"
+                      >
+                        <span>M</span><span>48</span>
+                      </div>
                     </div>
-                    <div class="badge">
-                      <button class="flex justify-between w-full gap-3">
-                        <span>M</span><span>44</span>
-                      </button>
+                    <div class="badge-container relative">
+                      <input
+                        type="radio"
+                        name="t-shirt-size"
+                        class="w-full opacity-0 peer h-full absolute inset-0 m-auto inline-block"
+                      />
+                      <div
+                        class="badge w-full h-full peer-checked:shadow-badge-active peer-hover:bg-[#E5EDFC] justify-between flex font-bold text-xl"
+                      >
+                        <span>L</span><span>50</span>
+                      </div>
                     </div>
-                    <div class="badge">
-                      <button class="flex justify-between w-full gap-3">
-                        <span>L</span><span>46</span>
-                      </button>
+                    <div class="badge-container relative">
+                      <input
+                        type="radio"
+                        name="t-shirt-size"
+                        class="w-full opacity-0 peer h-full absolute inset-0 m-auto inline-block"
+                      />
+                      <div
+                        class="badge w-full h-full peer-checked:shadow-badge-active peer-hover:bg-[#E5EDFC] justify-between flex font-bold text-xl"
+                      >
+                        <span>XL</span><span>52</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="my-5 border-b border-grey pb-5">
-                  <a
-                    href="#"
-                    class="border-dashed border-b border-blue text-blue"
-                    >Подобрать размеры</a
+                <div class="my-5 border-b border-grey pb-5 lg:pr-16">
+                  <button
+                    class="border-dashed border-b border-blue text-blue hover:text-green transition-colors hover:border-green text_2 cloth-size-modal-open border"
                   >
+                    Подобрать размеры
+                  </button>
                 </div>
-                <div class="my-5">
+                <div class="flex-col flex mt-[26px] mb-10">
                   <label for="quantity">Выберите количество</label>
                   <div
-                    type="number"
-                    name="quantity"
-                    class="button-form-preorder flex justify-between items-center pr-3"
+                    class="flex lg:flex-row flex-col lg:items-center justify-between 2xl:gap-5"
                   >
-                    <span>Кол-во</span>
-                    <div class="flex items-center w-[86px] justify-between">
-                      <button><img src="./../src/img/arrow-left.svg" /></button>
-                      <span>1</span>
-                      <button>
-                        <img src="./../src/img/arrow-right.svg" />
+                    <div
+                      type="number"
+                      name="quantity"
+                      class="button-form-preorder flex justify-between border-2"
+                    >
+                      <span>Кол-во</span>
+                      <div class="flex items-center w-24 justify-between">
+                        <button>
+                          <img src="./../src/img/arrow-left.svg" />
+                        </button>
+                        <span>1</span>
+                        <button>
+                          <img src="./../src/img/arrow-right.svg" />
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center gap-1 center lg:self-end bold whitespace-nowrap"
+                    >
+                      <h4>13 000 ₽</h4>
+                      <p class="text-xl text-darkGrey line-through">13 000 ₽</p>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="button button-buy h-[46px] focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] flex button-shake mt-3 w-[calc(100%-8px)] font-bold mb-2"
+                  href="/cart/"
+                >
+                  В корзину
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="font-normal gap-3 specifications tab border-lightGray mt-[-2px] border-t-2 overflow-product-card"
+            >
+              <div class="pl-10 pr-5 pt-7 pb-8 rounded-[30px] bg-grey mt-10">
+                <div class="w-56">
+                  <div class="text-black font-bold flex justify-between">
+                    <div>
+                      <p>Состав</p>
+                      <p>Принт</p>
+                      <p>Круглый</p>
+                    </div>
+                    <div class="regular">
+                      <p>100% хлопок</p>
+                      <p>Прямая печать</p>
+                      <p>Круглый</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="pl-10 pr-5 py-8 rounded-[30px] bg-grey">
+                Стандартная футболка и самая главная гордость Kirill Karavaev®,
+                дорабатывалась больше 10 раз, доведённая нашими конструкторами
+                почти до совершенства. Выполненная из мягкой и приятной ткани на
+                основе натурального турецкого хлопка. Базовый элемент гардероба,
+                который будет уместен в любых ситуациях.
+              </p>
+              <div
+                class="pl-10 pr-5 py-8 rounded-[30px] bg-grey text-darkestGrey"
+              >
+                <div class="mb-6 flex gap-2">
+                  <img
+                    src="../src/img/russia.png"
+                    alt="russia"
+                    class="w-5 h-5"
+                  /><span class="text-black uppercase text-sm"
+                    >Сделано в России</span
+                  >
+                </div>
+                <p>
+                  Стандартная футболка и самая главная гордость Kirill
+                  Karavaev®, дорабатывалась больше 10 раз, доведённая нашими
+                  конструкторами почти до совершенства. Выполненная из мягкой и
+                  приятной ткани на основе натурального турецкого хлопка.
+                  Базовый элемент гардероба, который будет уместен в любых
+                  ситуациях.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cart-modal modal">
+      <div
+        class="pt-[10px] bg-white max-h-[95vh] w-full lg:h-[82.5vh] lg:w-auto cart-modal-content rounded-t-[30px] lg:rounded-[30px] px-5 lg:p-0 overflow-scroll scrollbar-off lg:overflow-hidden z-[9999]"
+      >
+        <div class="flex flex-col lg:flex-row overflow-hidden">
+          <div
+            class="lg:flex-1 lg:pl-11 lg:pt-16 lg:pb-7 lg:pr-9 lg:overflow-scroll scrollbar-off lg:h-[82.5vh]"
+          >
+            <h5 class="mt-11 lg:mt-0">Вы добавили 1 товар ( всего 1 шт.)</h5>
+            <div class="w-full text-base lg:text-xl">
+              <div class="flex flex-col lg:mb-16 mt-5 lg:mt-7">
+                <div
+                  class="flex w-full border-b-2 border-black pb-3 lg:pb-6 lg:wrap text-black justify-between"
+                >
+                  <img
+                    src="./../src/img/smallTShirt.jpg"
+                    alt="tshirt"
+                    class="h-[84px] w-[82px]"
+                  />
+                  <div
+                    class="text_2 font-bold flex w-full items-center justify-between h-24 lg:h-auto"
+                  >
+                    <div class="ml-4 lg:ml-8 lg:gap-2 flex flex-col">
+                      <p class="uppercase ml-2 lg:m-0">
+                        Футболка <br class="" />“Храни тебя гУсь!”
+                      </p>
+                      <p class="text_4 text-darkestGrey ml-2 lg:m-0">
+                        Размер S
+                      </p>
+                      <span class="flex">
+                        <span class="flex items-start regular lg:text-xl gap-4">
+                          <p
+                            class="hidden lg:block uppercase font-normal text-black lg:text-base 3xl:text-xl"
+                          >
+                            Кол-во
+                          </p>
+                          <div class="flex mt-2 lg:m-0">
+                            <button>
+                              <img src="./../src/img/arrow-left.svg" />
+                            </button>
+                            <p>1</p>
+                            <button>
+                              <img src="./../src/img/arrow-right.svg" />
+                            </button>
+                          </div>
+                        </span>
+                      </span>
+                    </div>
+                    <div
+                      class="flex flex-col lg:flex-row lg:gap-6 h-full justify-between lg:items-start relative items-center lg:mt-7 self-start"
+                    >
+                      <p
+                        class="whitespace-nowrap order-2 lg:order-1 absolute bottom-0 right-1 lg:static"
+                      >
+                        13 000 ₽
+                      </p>
+                      <button class="self-end lg:self-auto lg:order-2">
+                        <img src="./../src/img/close.svg" />
                       </button>
                     </div>
                   </div>
                 </div>
-                <div class="flex items-center gap-1 justify-center">
-                  <h4>13 000 ₽</h4>
-                  <p class="text_base text-grey line-through">13 000 ₽</p>
-                </div>
-                <button
-                  class="button button-buy h-[46px] focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] flex button-shake mt-3 w-full lg:w-[88%] lg:mx-auto"
+              </div>
+              <div class="flex flex-col lg:mb-16 mt-5 lg:mt-7">
+                <div
+                  class="flex w-full border-b-2 border-black pb-3 lg:pb-6 lg:wrap text-black justify-between"
                 >
-                  В корзину
-                </button>
-                <div class="flex items-start mb-6">
-                  <button
-                    class="flex-1 text-left text-xl border-b-2 border-black pb-3"
-                  >
-                    Обзор
-                  </button>
-                  <button class="flex-1 text-left text-xl">
-                    Характеристики
-                  </button>
-                </div>
-                <div class="flex flex-col lg:flex-row font-normal gap-3">
-                  <p class="pl-10 pr-5 py-8 rounded-[30px] bg-grey">
-                    Стандартная футболка и самая главная гордость Kirill
-                    Karavaev®, дорабатывалась больше 10 раз, доведённая нашими
-                    конструкторами почти до совершенства. Выполненная из мягкой
-                    и приятной ткани на основе натурального турецкого хлопка.
-                    Базовый элемент гардероба, который будет уместен в любых
-                    ситуациях.
-                  </p>
+                  <img
+                    src="./../src/img/smallTShirt.jpg"
+                    alt="tshirt"
+                    class="h-[84px] w-[82px]"
+                  />
                   <div
-                    class="pl-10 pr-5 py-8 rounded-[30px] bg-grey text-darkestGrey"
+                    class="text_2 font-bold flex w-full items-center justify-between h-24 lg:h-auto"
                   >
-                    <div class="mb-6 flex gap-2">
-                      <img
-                        src="../src/img/russia.png"
-                        alt="russia"
-                        class="w-5 h-5"
-                      /><span class="text-black uppercase text-sm"
-                        >Сделано в России</span
-                      >
+                    <div class="ml-4 lg:ml-8 lg:gap-2 flex flex-col">
+                      <p class="uppercase ml-2 lg:m-0">
+                        Футболка <br class="" />“Храни тебя гУсь!”
+                      </p>
+                      <p class="text_4 text-darkestGrey ml-2 lg:m-0">
+                        Размер S
+                      </p>
+                      <span class="flex">
+                        <span class="flex items-start regular lg:text-xl gap-4">
+                          <p
+                            class="hidden lg:block uppercase font-normal text-black lg:text-base 3xl:text-xl"
+                          >
+                            Кол-во
+                          </p>
+                          <div class="flex mt-2 lg:m-0">
+                            <button>
+                              <img src="./../src/img/arrow-left.svg" />
+                            </button>
+                            <p>1</p>
+                            <button>
+                              <img src="./../src/img/arrow-right.svg" />
+                            </button>
+                          </div>
+                        </span>
+                      </span>
                     </div>
-                    <p>
-                      Стандартная футболка и самая главная гордость Kirill
-                      Karavaev®, дорабатывалась больше 10 раз, доведённая нашими
-                      конструкторами почти до совершенства. Выполненная из
-                      мягкой и приятной ткани на основе натурального турецкого
-                      хлопка. Базовый элемент гардероба, который будет уместен в
-                      любых ситуациях.
-                    </p>
+                    <div
+                      class="flex flex-col lg:flex-row lg:gap-6 h-full justify-between lg:items-start relative items-center lg:mt-7 self-start"
+                    >
+                      <p
+                        class="whitespace-nowrap order-2 lg:order-1 absolute bottom-0 right-1 lg:static"
+                      >
+                        13 000 ₽
+                      </p>
+                      <button class="self-end lg:self-auto lg:order-2">
+                        <img src="./../src/img/close.svg" />
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div> -->
+              </div>
+              <div class="hidden lg:block">
+                <h4 class="mb-5">Рекомендуем!</h4>
+                <div
+                  class="hidden lg:flex uppercase flex-wrap gap-10 3xl:gap-4 3xl:justify-between w-[553px] 2xl:w-[734px] 3xl:w-[37vw] text-base"
+                >
+                  <div
+                    class="flex flex-col items-center justify-center rounded-[20px] card-hover text-center w-56"
+                  >
+                    <img
+                      src="../src/img/t-shirt.png"
+                      alt="t-shirt"
+                      class="max-w-[155px] h-[150px] mt-7 md:h-full md:max-w-full"
+                    />
+                    <div>
+                      <p
+                        class="line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3"
+                      >
+                        Футболка
+                      </p>
+                      <p>“Храни тебя гУсь!”</p>
+                    </div>
+                    <p class="mb-4 mt-2">3 000 ₽</p>
+                    <button
+                      class="button button-buy focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake w-[87%]"
+                    >
+                      В корзину
+                    </button>
+                  </div>
+                  <div
+                    class="flex flex-col items-center justify-center rounded-[20px] card-hover text-center w-56"
+                  >
+                    <img
+                      src="../src/img/t-shirt.png"
+                      alt="t-shirt"
+                      class="max-w-[155px] h-[150px] mt-7 md:h-full md:max-w-full"
+                    />
+                    <div>
+                      <p
+                        class="line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3"
+                      >
+                        Футболка
+                      </p>
+                      <p>“Храни тебя гУсь!”</p>
+                    </div>
+                    <p class="mb-4 mt-2">3 000 ₽</p>
+                    <button
+                      class="button button-buy focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake w-[87%]"
+                    >
+                      В корзину
+                    </button>
+                  </div>
+                  <div
+                    class="flex flex-col items-center justify-center rounded-[20px] card-hover text-center w-56"
+                  >
+                    <img
+                      src="../src/img/t-shirt.png"
+                      alt="t-shirt"
+                      class="max-w-[155px] h-[150px] mt-7 md:h-full md:max-w-full"
+                    />
+                    <div>
+                      <p
+                        class="line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3"
+                      >
+                        Футболка
+                      </p>
+                      <p>“Храни тебя гУсь!”</p>
+                    </div>
+                    <p class="mb-4 mt-2">3 000 ₽</p>
+                    <button
+                      class="button button-buy focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake w-[87%]"
+                    >
+                      В корзину
+                    </button>
+                  </div>
+                  <div
+                    class="flex flex-col items-center justify-center rounded-[20px] card-hover text-center w-56"
+                  >
+                    <img
+                      src="../src/img/t-shirt.png"
+                      alt="t-shirt"
+                      class="max-w-[155px] h-[150px] mt-7 md:h-full md:max-w-full"
+                    />
+                    <div>
+                      <p
+                        class="line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3"
+                      >
+                        Футболка
+                      </p>
+                      <p>“Храни тебя гУсь!”</p>
+                    </div>
+                    <p class="mb-4 mt-2">3 000 ₽</p>
+                    <button
+                      class="button button-buy focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake w-[87%]"
+                    >
+                      В корзину
+                    </button>
+                  </div>
+                  <div
+                    class="flex flex-col items-center justify-center rounded-[20px] card-hover text-center w-56"
+                  >
+                    <img
+                      src="../src/img/t-shirt.png"
+                      alt="t-shirt"
+                      class="max-w-[155px] h-[150px] mt-7 md:h-full md:max-w-full"
+                    />
+                    <div>
+                      <p
+                        class="line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3"
+                      >
+                        Футболка
+                      </p>
+                      <p>“Храни тебя гУсь!”</p>
+                    </div>
+                    <p class="mb-4 mt-2">3 000 ₽</p>
+                    <button
+                      class="button button-buy focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake w-[87%]"
+                    >
+                      В корзину
+                    </button>
+                  </div>
+                  <div
+                    class="flex flex-col items-center justify-center rounded-[20px] card-hover text-center w-56"
+                  >
+                    <img
+                      src="../src/img/t-shirt.png"
+                      alt="t-shirt"
+                      class="max-w-[155px] h-[150px] mt-7 md:h-full md:max-w-full"
+                    />
+                    <div>
+                      <p
+                        class="line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3"
+                      >
+                        Футболка
+                      </p>
+                      <p>“Храни тебя гУсь!”</p>
+                    </div>
+                    <p class="mb-4 mt-2">3 000 ₽</p>
+                    <button
+                      class="button button-buy focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake w-[87%]"
+                    >
+                      В корзину
+                    </button>
+                  </div>
+                  <div
+                    class="flex flex-col items-center justify-center rounded-[20px] card-hover text-center w-56"
+                  >
+                    <img
+                      src="../src/img/t-shirt.png"
+                      alt="t-shirt"
+                      class="max-w-[155px] h-[150px] mt-7 md:h-full md:max-w-full"
+                    />
+                    <div>
+                      <p
+                        class="line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3"
+                      >
+                        Футболка
+                      </p>
+                      <p>“Храни тебя гУсь!”</p>
+                    </div>
+                    <p class="mb-4 mt-2">3 000 ₽</p>
+                    <button
+                      class="button button-buy focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake w-[87%]"
+                    >
+                      В корзину
+                    </button>
+                  </div>
+                  <div
+                    class="flex flex-col items-center justify-center rounded-[20px] card-hover text-center w-56"
+                  >
+                    <img
+                      src="../src/img/t-shirt.png"
+                      alt="t-shirt"
+                      class="max-w-[155px] h-[150px] mt-7 md:h-full md:max-w-full"
+                    />
+                    <div>
+                      <p
+                        class="line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3"
+                      >
+                        Футболка
+                      </p>
+                      <p>“Храни тебя гУсь!”</p>
+                    </div>
+                    <p class="mb-4 mt-2">3 000 ₽</p>
+                    <button
+                      class="button button-buy focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake w-[87%]"
+                    >
+                      В корзину
+                    </button>
+                  </div>
+                  <div
+                    class="flex flex-col items-center justify-center rounded-[20px] card-hover text-center w-56"
+                  >
+                    <img
+                      src="../src/img/t-shirt.png"
+                      alt="t-shirt"
+                      class="max-w-[155px] h-[150px] mt-7 md:h-full md:max-w-full"
+                    />
+                    <div>
+                      <p
+                        class="line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3"
+                      >
+                        Футболка
+                      </p>
+                      <p>“Храни тебя гУсь!”</p>
+                    </div>
+                    <p class="mb-4 mt-2">3 000 ₽</p>
+                    <button
+                      class="button button-buy focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake w-[87%]"
+                    >
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+                <div class="flex lg:hidden">
+                  <div class="swiper-cart">
+                    <div class="swiper-wrapper">
+                      <div
+                        class="swiper-slide flex flex-col items-center justify-center rounded-[20px] card-hover text-center sm:w-56 mb-6"
+                      >
+                        <img
+                          src="../src/img/t-shirt.png"
+                          alt="t-shirt"
+                          class="max-w-[155px] h-[150px] mt-7 md:h-full md:max-w-full"
+                        />
+                        <p
+                          class="button mb-6 line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3 h-full pt-3 lg:pt-9"
+                        >
+                          Футболка “Храни тебя гУсь!”
+                        </p>
+                        <p class="button mb-3">3 000 ₽</p>
+                        <button
+                          class="button button-buy focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake w-[87%]"
+                        >
+                          В корзину
+                        </button>
+                      </div>
+                      <div
+                        class="swiper-slide flex flex-col items-center justify-center rounded-[20px] card-hover text-center sm:w-56 mb-6"
+                      >
+                        <img
+                          src="../src/img/t-shirt.png"
+                          alt="t-shirt"
+                          class="max-w-[155px] h-[150px] mt-7 md:h-full md:max-w-full"
+                        />
+                        <p
+                          class="button mb-6 line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3 h-full pt-9"
+                        >
+                          Футболка “Храни тебя гУсь!”
+                        </p>
+                        <p class="button mb-3">3 000 ₽</p>
+                        <button
+                          class="button button-buy focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake w-[87%]"
+                        >
+                          В корзину
+                        </button>
+                      </div>
+                      <div
+                        class="swiper-slide flex flex-col items-center justify-center rounded-[20px] card-hover text-center sm:w-56 mb-6"
+                      >
+                        <img
+                          src="../src/img/t-shirt.png"
+                          alt="t-shirt"
+                          class="max-w-[155px] h-[150px] mt-7 md:h-full md:max-w-full"
+                        />
+                        <p
+                          class="button mb-6 line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3 h-full pt-9"
+                        >
+                          Футболка “Храни тебя гУсь!”
+                        </p>
+                        <p class="button mb-3">3 000 ₽</p>
+                        <button
+                          class="button button-buy focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake w-[87%]"
+                        >
+                          В корзину
+                        </button>
+                      </div>
+                      <div
+                        class="swiper-slide flex flex-col items-center justify-center rounded-[20px] card-hover text-center sm:w-56 mb-6"
+                      >
+                        <img
+                          src="../src/img/t-shirt.png"
+                          alt="t-shirt"
+                          class="max-w-[155px] h-[150px] mt-7 md:h-full md:max-w-full"
+                        />
+                        <p
+                          class="button mb-6 line-clamp-2 md:line-clamp-1 3xl:line-clamp-none px-3 h-full pt-9"
+                        >
+                          Футболка “Храни тебя гУсь!”
+                        </p>
+                        <p class="button mb-3">3 000 ₽</p>
+                        <button
+                          class="button button-buy focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] hidden lg:flex button-shake w-[87%]"
+                        >
+                          В корзину
+                        </button>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:shadow-cart-modal lg:px-9 lg:pt-24 lg:h-[82.5vh] lg:pb-7"
+          >
+            <button
+              class="absolute top-[10px] lg:top-11 right-[20px] lg:right-11 circle cart-modal-close hover:bg-black group"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.3332 2.5465L17.4532 0.666504L9.99984 8.11984L2.5465 0.666504L0.666504 2.5465L8.11984 9.99984L0.666504 17.4532L2.5465 19.3332L9.99984 11.8798L17.4532 19.3332L19.3332 17.4532L11.8798 9.99984L19.3332 2.5465Z"
+                  class="group-hover:fill-white"
+                />
+              </svg>
+            </button>
+            <div
+              class="w-full lg:w-72 xl:w-[415px] 2xl:w-[394px] 3xl:w-[20vw] h-full flex flex-col pb-7 lg:pb-0"
+            >
+              <h5 class="hidden lg:block lg:text-3xl">В корзине</h5>
+              <div class="border-b-2 border-darkGrey pb-3 mt-5 lg:mt-[30px]">
+                <div class="flex justify-between mb-5">
+                  <p class="text-darkestGrey">Общая сумма</p>
+                  <p>3 000 ₽</p>
+                </div>
+                <div class="flex justify-between">
+                  <p class="text-darkestGrey">Скидка</p>
+                  <p>-300 ₽</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between mt-4 mb-24 lg:my-8">
+                <h5 class="text-darkestGrey">Всего</h5>
+                <h5 class="rounded-[30px] lg:py-1 px-4 lg:px-5 bg-yellow">
+                  3 000 ₽
+                </h5>
+              </div>
+              <a
+                class="button button-modal-buy bg-white focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] button-shake w-[calc(100%-5px)] lg:w-full mb-[10px] mr-10"
+                href="/cart/"
+              >
+                Перейти в корзину
+              </a>
+              <a
+                class="button button-modal-buy focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] button-shake w-[calc(100%-5px)] lg:w-full lg:mt-3 mb-[10px]"
+                href="/preorder/"
+              >
+                Оформить заказ
+              </a>
+              <a
+                class="button button-modal-buy bg-white mt-auto focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] button-shake w-[calc(100%-5px)] lg:w-full cart-modal-close self-start mb-7 lg:mb-0"
+              >
+                Продолжить покупки
+              </a>
             </div>
           </div>
         </div>

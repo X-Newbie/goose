@@ -2,7 +2,7 @@ import Swiper, { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper-cart", {
   modules: [Pagination],
   pagination: {
     el: ".swiper-pagination",

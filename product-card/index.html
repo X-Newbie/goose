@@ -7,19 +7,19 @@
     
     
     
-    
     <title>Vite App</title>
-  <script type="module" crossorigin src="./../assets/product-card.233216d9.js"></script>
-  <link rel="modulepreload" href="./../assets/input.e3d51da9.js">
-  <link rel="modulepreload" href="./../assets/shaking-buttons.20fdc68d.js">
-  <link rel="modulepreload" href="./../assets/vendor.514feca6.js">
-  <link rel="modulepreload" href="./../assets/product-swiper.05d300b5.js">
-  <link rel="stylesheet" href="./../assets/input.dcf84207.css">
-  <link rel="stylesheet" href="./../assets/product-swiper.0b2023d9.css">
-  <link rel="stylesheet" href="./../assets/swiper.4caa3306.css">
+  <script type="module" crossorigin src="assets/product-card.739d489e.js"></script>
+  <link rel="modulepreload" href="assets/input.655a1f2d.js">
+  <link rel="modulepreload" href="assets/shaking-buttons.a25734bd.js">
+  <link rel="modulepreload" href="assets/vendor.7779e7f7.js">
+  <link rel="modulepreload" href="assets/product-card.fe522015.js">
+  <link rel="modulepreload" href="assets/modal.1489b151.js">
+  <link rel="stylesheet" href="assets/input.16537a07.css">
+  <link rel="stylesheet" href="assets/product-card.d918b104.css">
+  <link rel="stylesheet" href="assets/swiper.459133db.css">
 </head>
 
-  <body>
+  <body class="relative">
     <nav
       class="px-5 md:px-8 lg:px-[104px] xl:px-40 2xl:px-80 navigation_bg sticky"
     >
@@ -65,7 +65,7 @@
           class="absolute mx-auto left-0 right-0 w-[61px] h-[52px] md:w-[89px] md:h-[76px]"
         >
           <img
-            src="./../assets/logo-blue.48c039e5.svg"
+            src="assets/logo-blue.48c039e5.svg"
             alt="blue logo"
             class="w-full h-full"
           />
@@ -113,126 +113,379 @@
       <div>
         <button
           class="uppercase flex rounded-[30px] border-2 border-black items-center"
+          onclick="window.location.href = '/'"
         >
-          <img src="./../assets/arrow-left.5412ad21.svg" /><span class="pr-2 block">
+          <img src="assets/arrow-left.5412ad21.svg" /><span class="pr-2 block">
             Назад
           </span>
         </button>
-        <div>
-          <div>
-            <div class="swiper">
-              <div class="swiper-wrapper">
+        <div class="mt-7">
+          <div class="lg:flex lg:gap-10">
+            <!--Mobile swiper-->
+            <div class="swiper swiper-mobile block md:hidden">
+              <div class="swiper-wrapper w-full">
                 <div class="swiper-slide">
-                  <img src="./../assets/t-shirt.d1406669.png" alt="tshirt" />
+                  <img
+                    src="assets/t-shirt.d1406669.png"
+                    alt="tshirt"
+                    class="mx-auto"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./../assets/t-shirt.d1406669.png" alt="tshirt" />
+                  <img
+                    src="assets/t-shirt.d1406669.png"
+                    alt="tshirt"
+                    class="mx-auto"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./../assets/t-shirt.d1406669.png" alt="tshirt" />
+                  <img
+                    src="assets/t-shirt.d1406669.png"
+                    alt="tshirt"
+                    class="mx-auto"
+                  />
                 </div>
               </div>
               <div class="swiper-pagination"></div>
             </div>
+            <!--Des-->
+            <div
+              class="swiper-container hidden md:flex md:flex-row-reverse h-[620px] w-1/2"
+            >
+              <div class="swiper product-img w-[75%]">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/t-short-card.86856e13.jpg"
+                      alt="tshirt"
+                      class="h-full w-full"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/t-short-card.86856e13.jpg"
+                      alt="tshirt"
+                      class="h-full w-full"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/t-short-card.ed1b8d0f.png"
+                      alt="tshirt"
+                      class="h-full w-full"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/t-short-card.ed1b8d0f.png"
+                      alt="tshirt"
+                      class="h-full w-full"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/t-short-card.ed1b8d0f.png"
+                      alt="tshirt"
+                      class="h-full w-full"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/t-short-card.ed1b8d0f.png"
+                      alt="tshirt"
+                      class="h-full w-full"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/t-short-card.ed1b8d0f.png"
+                      alt="tshirt"
+                      class="h-full w-full"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/t-short-card.ed1b8d0f.png"
+                      alt="tshirt"
+                      class="h-full w-full"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/t-short-card.ed1b8d0f.png"
+                      alt="tshirt"
+                      class="h-full w-full"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="swiper product-thumbs w-[100px] px-2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide h-full">
+                    <img
+                      src="assets/t-shirt.d1406669.png"
+                      alt="tshirt"
+                      class="w-full h-[108px]"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/t-shirt.d1406669.png"
+                      alt="tshirt"
+                      class="w-full h-[108px]"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/t-shirt.d1406669.png"
+                      alt="tshirt"
+                      class="w-full h-[108px]"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/t-shirt.d1406669.png"
+                      alt="tshirt"
+                      class="w-full h-[108px]"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/t-shirt.d1406669.png"
+                      alt="tshirt"
+                      class="w-full h-[108px]"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/t-shirt.d1406669.png"
+                      alt="tshirt"
+                      class="w-full h-[108px]"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/t-shirt.d1406669.png"
+                      alt="tshirt"
+                      class="w-full h-[108px]"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/t-shirt.d1406669.png"
+                      alt="tshirt"
+                      class="w-full h-[108px]"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/t-shirt.d1406669.png"
+                      alt="tshirt"
+                      class="w-full h-[108px]"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="mt-9">
-              <h2 class="body_text font-bold uppercase">
+              <h2 class="body_text font-bold uppercase lg:text-center">
                 Футболка “Храни тебя гУсь!”
               </h2>
-              <p class="mt-7">Размер футболки</p>
-              <div class="mt-6 border-b border-grey pb-5">
+              <p class="mt-7 lg:pl-9">Размер футболки</p>
+              <div class="mt-6 border-b border-grey pb-5 lg:pl-9 lg:pr-16">
                 <p>Женские</p>
                 <div class="flex flex-wrap gap-3 mt-2">
-                  <div class="badge">
-                    <button class="flex justify-between w-full gap-3">
+                  <div class="badge-container relative">
+                    <input
+                      type="radio"
+                      name="t-shirt-size"
+                      class="w-full opacity-0 peer h-full absolute inset-0 m-auto inline-block"
+                    />
+                    <div
+                      class="badge w-full h-full peer-checked:shadow-badge-active peer-hover:bg-[#E5EDFC] justify-between flex font-bold text-xl"
+                    >
                       <span>XS</span><span>40</span>
-                    </button>
+                    </div>
                   </div>
-                  <div class="badge">
-                    <button class="flex justify-between w-full gap-3">
+                  <div class="badge-container relative">
+                    <input
+                      type="radio"
+                      name="t-shirt-size"
+                      class="w-full opacity-0 peer h-full absolute inset-0 m-auto inline-block"
+                    />
+                    <div
+                      class="badge w-full h-full peer-checked:shadow-badge-active peer-hover:bg-[#E5EDFC] justify-between flex font-bold text-xl"
+                    >
                       <span>S</span><span>42</span>
-                    </button>
+                    </div>
                   </div>
-                  <div class="badge">
-                    <button class="flex justify-between w-full gap-3">
+                  <div class="badge-container relative">
+                    <input
+                      type="radio"
+                      name="t-shirt-size"
+                      class="w-full opacity-0 peer h-full absolute inset-0 m-auto inline-block"
+                    />
+                    <div
+                      class="badge w-full h-full peer-checked:shadow-badge-active peer-hover:bg-[#E5EDFC] justify-between flex font-bold text-xl"
+                    >
                       <span>M</span><span>44</span>
-                    </button>
+                    </div>
                   </div>
-                  <div class="badge">
-                    <button class="flex justify-between w-full gap-3">
+                  <div class="badge-container relative">
+                    <input
+                      type="radio"
+                      name="t-shirt-size"
+                      class="w-full opacity-0 peer h-full absolute inset-0 m-auto inline-block"
+                    />
+                    <div
+                      class="badge w-full h-full peer-checked:shadow-badge-active peer-hover:bg-[#E5EDFC] justify-between flex font-bold text-xl"
+                    >
                       <span>L</span><span>46</span>
-                    </button>
+                    </div>
                   </div>
-                  <div class="badge">
-                    <button class="flex justify-between w-full gap-3">
+                  <div class="badge-container relative">
+                    <input
+                      type="radio"
+                      name="t-shirt-size"
+                      class="w-full opacity-0 peer h-full absolute inset-0 m-auto inline-block"
+                    />
+                    <div
+                      class="badge w-full h-full peer-checked:shadow-badge-active peer-hover:bg-[#E5EDFC] justify-between flex font-bold text-xl"
+                    >
                       <span>S</span><span>42</span>
-                    </button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="mt-5 border-b border-grey pb-5">
+
+              <div class="mt-5 border-b border-grey pb-5 lg:pl-9 lg:pr-16">
                 <p class="mb-2">Мужские</p>
                 <div class="flex flex-wrap gap-3">
-                  <div class="badge">
-                    <button class="flex justify-between w-full gap-3">
-                      <span>XS</span><span>40</span>
-                    </button>
+                  <div class="badge-container relative">
+                    <input
+                      type="radio"
+                      name="t-shirt-size"
+                      class="w-full opacity-0 peer h-full absolute inset-0 m-auto inline-block"
+                    />
+                    <div
+                      class="badge w-full h-full peer-checked:shadow-badge-active peer-hover:bg-[#E5EDFC] justify-between flex font-bold text-xl"
+                    >
+                      <span>S</span><span>46</span>
+                    </div>
                   </div>
-                  <div class="badge">
-                    <button class="flex justify-between w-full gap-3">
-                      <span>S</span><span>42</span>
-                    </button>
+                  <div class="badge-container relative">
+                    <input
+                      type="radio"
+                      name="t-shirt-size"
+                      class="w-full opacity-0 peer h-full absolute inset-0 m-auto inline-block"
+                    />
+                    <div
+                      class="badge w-full h-full peer-checked:shadow-badge-active peer-hover:bg-[#E5EDFC] justify-between flex font-bold text-xl"
+                    >
+                      <span>M</span><span>48</span>
+                    </div>
                   </div>
-                  <div class="badge">
-                    <button class="flex justify-between w-full gap-3">
-                      <span>M</span><span>44</span>
-                    </button>
+                  <div class="badge-container relative">
+                    <input
+                      type="radio"
+                      name="t-shirt-size"
+                      class="w-full opacity-0 peer h-full absolute inset-0 m-auto inline-block"
+                    />
+                    <div
+                      class="badge w-full h-full peer-checked:shadow-badge-active peer-hover:bg-[#E5EDFC] justify-between flex font-bold text-xl"
+                    >
+                      <span>L</span><span>50</span>
+                    </div>
                   </div>
-                  <div class="badge">
-                    <button class="flex justify-between w-full gap-3">
-                      <span>L</span><span>46</span>
-                    </button>
+                  <div class="badge-container relative">
+                    <input
+                      type="radio"
+                      name="t-shirt-size"
+                      class="w-full opacity-0 peer h-full absolute inset-0 m-auto inline-block"
+                    />
+                    <div
+                      class="badge w-full h-full peer-checked:shadow-badge-active peer-hover:bg-[#E5EDFC] justify-between flex font-bold text-xl"
+                    >
+                      <span>XL</span><span>52</span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="my-5 border-b border-grey pb-5">
-                <a href="#" class="border-dashed border-b border-blue text-blue"
-                  >Подобрать размеры</a
+              <div class="my-5 border-b border-grey pb-5 lg:pl-9 lg:pr-16">
+                <button
+                  class="border-dashed border-b border-blue text-blue hover:text-green transition-colors hover:border-green text_2 cloth-size-modal-open"
                 >
+                  Подобрать размеры
+                </button>
               </div>
-              <div class="my-5">
+              <div class="flex-col flex my-5 lg:pl-9">
                 <label for="quantity">Выберите количество</label>
-                <div
-                  type="number"
-                  name="quantity"
-                  class="button-form-preorder flex justify-between items-center pr-3"
-                >
-                  <span>Кол-во</span>
-                  <div class="flex items-center w-[86px] justify-between">
-                    <button><img src="./../assets/arrow-left.5412ad21.svg" /></button>
-                    <span>1</span>
-                    <button><img src="./../assets/arrow-right.536e7730.svg" /></button>
+                <div class="flex lg:flex-row flex-col lg:gap-5 lg:items-center">
+                  <div
+                    type="number"
+                    name="quantity"
+                    class="button-form-preorder flex justify-between items-center pr-3 lg:mt-5 lg:mb-0 border-2"
+                  >
+                    <span>Кол-во</span>
+                    <div class="flex items-center w-[86px] justify-between">
+                      <button><img src="assets/arrow-left.5412ad21.svg" /></button>
+                      <span>1</span>
+                      <button>
+                        <img src="assets/arrow-right.536e7730.svg" />
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-1 justify-center lg:w-full lg:self-end"
+                  >
+                    <h4>13 000 ₽</h4>
+                    <p class="text_base text-darkGrey line-through">13 000 ₽</p>
                   </div>
                 </div>
               </div>
-              <div class="flex items-center gap-1 justify-center">
-                <h4>13 000 ₽</h4>
-                <p class="text_base text-grey line-through">13 000 ₽</p>
-              </div>
-              <button
+              <a
                 class="button button-buy h-[46px] focus:bg-button-hover lg:hover:bg-button-hover bg-center bg-no-repeat md:bg-[length:167px_48px] flex button-shake mt-3 w-full lg:w-[88%] lg:mx-auto"
+                href="/cart/"
               >
                 В корзину
+              </a>
+            </div>
+          </div>
+          <div class="mt-14 lg:mt-28">
+            <div class="flex items-start mb-6">
+              <button
+                class="flex-1 text-left text-xl pb-3 tab-button review-button active"
+              >
+                Обзор
               </button>
-              <div class="flex items-start mb-6">
-                <button
-                  class="flex-1 text-left text-xl border-b-2 border-black pb-3"
-                >
-                  Обзор
-                </button>
-                <button class="flex-1 text-left text-xl">Характеристики</button>
-              </div>
-              <div class="flex flex-col lg:flex-row font-normal gap-3">
-                <p class="pl-10 pr-5 py-8 rounded-[30px] bg-grey">
+              <button
+                class="flex-1 text-left text-xl pb-3 tab-button specifications-button"
+              >
+                Характеристики
+              </button>
+            </div>
+            <div class="font-normal gap-3 review tab active">
+              <p class="pl-10 pr-5 py-8 rounded-[30px] bg-grey">
+                Стандартная футболка и самая главная гордость Kirill Karavaev®,
+                дорабатывалась больше 10 раз, доведённая нашими конструкторами
+                почти до совершенства. Выполненная из мягкой и приятной ткани на
+                основе натурального турецкого хлопка. Базовый элемент гардероба,
+                который будет уместен в любых ситуациях.
+              </p>
+              <div
+                class="pl-10 pr-5 py-8 rounded-[30px] bg-grey text-darkestGrey"
+              >
+                <div class="mb-6 flex gap-2">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGoSURBVHgBtZW9TsMwFIUPBQnxJxyBxEgYkJhQR8bwBIQNFhKeIDMTfoOGN4AnCB2ZoBNjy9YFHGCh4ieRKBJUqsy9SYMKEi1twyedG9uyjq+uHRv4HUHySAFJkXRH3D4nOSQTA8CG0jCMyPM8HQSBVkrpjGq1mow5jpMtJP9ianJGtm3rKIp0P3jBzgIKPbJPTH3f14MipexprnjCsJRKpcxcdJtK13X1qHAJyeuwuwTfNmhYeF940znrCQqWKLqQFyZGR2B+fU9ElSOHjZ14aQsnl8iHSYvCkVUAl2LWRG4sFDkWU+O0kw9zJkezgH+CjUO8hsiNpxrHkI1reKkhN5phYsyn4sJUJ7Y1HSMPTq/LIKfjMWoLYxzqZg1CjGMkwhawUk+aK1yKOGrD37/HyMhG+uE1shyv6h/YEQWIjRkMhXyg3+KZDgKwzf3M+J1UPmvCpqtbWLMYCP8ROGgkppukuNsYnYFy5Q32bQuiOEXF71PzuA3s3n1lyqYh+sBXn3YN6GAZuroKrddTqbV0zFuENgqIOnMFBsAkuUgfzp+PKT+wXi/DT7SgtH+/zrULAAAAAElFTkSuQmCC"
+                    alt="russia"
+                    class="w-5 h-5"
+                  /><span class="text-black uppercase text-sm"
+                    >Сделано в России</span
+                  >
+                </div>
+                <p>
                   Стандартная футболка и самая главная гордость Kirill
                   Karavaev®, дорабатывалась больше 10 раз, доведённая нашими
                   конструкторами почти до совершенства. Выполненная из мягкой и
@@ -240,26 +493,21 @@
                   Базовый элемент гардероба, который будет уместен в любых
                   ситуациях.
                 </p>
-                <div
-                  class="pl-10 pr-5 py-8 rounded-[30px] bg-grey text-darkestGrey"
-                >
-                  <div class="mb-6 flex gap-2">
-                    <img
-                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGoSURBVHgBtZW9TsMwFIUPBQnxJxyBxEgYkJhQR8bwBIQNFhKeIDMTfoOGN4AnCB2ZoBNjy9YFHGCh4ieRKBJUqsy9SYMKEi1twyedG9uyjq+uHRv4HUHySAFJkXRH3D4nOSQTA8CG0jCMyPM8HQSBVkrpjGq1mow5jpMtJP9ianJGtm3rKIp0P3jBzgIKPbJPTH3f14MipexprnjCsJRKpcxcdJtK13X1qHAJyeuwuwTfNmhYeF940znrCQqWKLqQFyZGR2B+fU9ElSOHjZ14aQsnl8iHSYvCkVUAl2LWRG4sFDkWU+O0kw9zJkezgH+CjUO8hsiNpxrHkI1reKkhN5phYsyn4sJUJ7Y1HSMPTq/LIKfjMWoLYxzqZg1CjGMkwhawUk+aK1yKOGrD37/HyMhG+uE1shyv6h/YEQWIjRkMhXyg3+KZDgKwzf3M+J1UPmvCpqtbWLMYCP8ROGgkppukuNsYnYFy5Q32bQuiOEXF71PzuA3s3n1lyqYh+sBXn3YN6GAZuroKrddTqbV0zFuENgqIOnMFBsAkuUgfzp+PKT+wXi/DT7SgtH+/zrULAAAAAElFTkSuQmCC"
-                      alt="russia"
-                      class="w-5 h-5"
-                    /><span class="text-black uppercase text-sm"
-                      >Сделано в России</span
-                    >
-                  </div>
-                  <p>
-                    Стандартная футболка и самая главная гордость Kirill
-                    Karavaev®, дорабатывалась больше 10 раз, доведённая нашими
-                    конструкторами почти до совершенства. Выполненная из мягкой
-                    и приятной ткани на основе натурального турецкого хлопка.
-                    Базовый элемент гардероба, который будет уместен в любых
-                    ситуациях.
-                  </p>
+              </div>
+            </div>
+            <div class="font-normal gap-3 specifications tab">
+              <div class="pl-10 pr-5 py-8 rounded-[30px] bg-grey">
+                <div class="flex justify-between w-64">
+                  <span class="text-black font-bold">Состав</span>
+                  <p>100% хлопок</p>
+                </div>
+                <div class="flex justify-between w-64">
+                  <span class="text-black font-bold">Принт</span>
+                  <p>Прямая печать</p>
+                </div>
+                <div class="flex justify-between w-64">
+                  <span class="text-black font-bold">Ворот</span>
+                  <p>Круглый</p>
                 </div>
               </div>
             </div>
@@ -304,7 +552,7 @@
         <div class="flex flex-col lg:flex-row justify-between relative">
           <div class="flex flex-col mb-12">
             <img
-              src="./../assets/logo-white.95369d9c.svg"
+              src="assets/logo-white.95369d9c.svg"
               alt="logo-white"
               class="w-[87px] h-[73px] md:w-[103px] md:h-[88px]"
             />
@@ -412,11 +660,93 @@
           <div
             class="flex justify-start items-center gap-1 uppercase text-white sm:justify-center mt-12 md:mt-16 3xl:mt-14"
           >
-            <img src="./../assets/TM.70fc3911.svg" alt="TM" />
+            <img src="assets/TM.70fc3911.svg" alt="TM" />
             <p class="text_2 regular">Papa Goose. Все права защищены</p>
           </div>
         </div>
       </div>
     </footer>
+    <div class="flex justify-center">
+      <div
+        class="px-5 fixed bottom-0 z-[130] rounded-t-[30px] bg-white justify-center items-center text-sm md:text-base cloth-size-modal top-[105vh] overflow-y-scroll scrollbar-off lg:px-[88px] mx-auto w-full lg:w-auto"
+      >
+        <div class="relative h-11 mt-[14px] lg:mt-12">
+          <button
+            class="text-right right-0 lg:right-2 circle cloth-size-modal-close hover:bg-black group absolute"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.3332 2.5465L17.4532 0.666504L9.99984 8.11984L2.5465 0.666504L0.666504 2.5465L8.11984 9.99984L0.666504 17.4532L2.5465 19.3332L9.99984 11.8798L17.4532 19.3332L19.3332 17.4532L11.8798 9.99984L19.3332 2.5465Z"
+                class="group-hover:fill-white"
+              />
+            </svg>
+          </button>
+        </div>
+        <h4 class="uppercase mt-4 lg:mt-1 lg:ml-6">Подобрать размер</h4>
+        <div class="mt-4 max-w-[903px] mx-auto">
+          <picture>
+            <source
+              media="(min-width: 1920px)"
+              srcset="./../src/img/washingGuide1920.svg"
+            />
+            <source
+              media="(min-width: 1600px)"
+              srcset="./../src/img/washingGuide1600.svg"
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="./../src/img/washingGuide1440.svg"
+            />
+            <source
+              media="(min-width: 450px)"
+              srcset="./../src/img/washingGuide1200.svg"
+            />
+            <img src="assets/washingGuide320.f1a63bd7.svg" alt="washing guide" />
+          </picture>
+        </div>
+      </div>
+    </div>
+    <div class="zoom-modal">
+      <button
+        class="fixed top-5 right-5 circle zoom-modal-close z-[180] hover:bg-black group"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19.3332 2.5465L17.4532 0.666504L9.99984 8.11984L2.5465 0.666504L0.666504 2.5465L8.11984 9.99984L0.666504 17.4532L2.5465 19.3332L9.99984 11.8798L17.4532 19.3332L19.3332 17.4532L11.8798 9.99984L19.3332 2.5465Z"
+            class="group-hover:fill-white"
+          />
+        </svg>
+      </button>
+      <div
+        class="zoom-modal-content bg-white rounded-[30px] mt-[63px] mb-3 flex max-w-[415px] mx-auto"
+      >
+        <div class="swiper swiper-mobile-modal block md:hidden my-14">
+          <div class="swiper-wrapper w-full">
+            <div class="swiper-slide">
+              <img src="assets/t-shirt.d1406669.png" alt="tshirt" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/t-shirt.d1406669.png" alt="tshirt" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/t-shirt.d1406669.png" alt="tshirt" />
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+    
   </body>
 </html>

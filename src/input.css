@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --delivery-arrow-rotate: 0deg;
+  --city-arrow-rotate: 0deg;
+}
+
 @layer components {
   .phone {
     @apply rounded-[20px] border-2 border-solid border-[#141414] bg-white px-[25px] text-xl h-11 w-fit gap-1;
@@ -24,10 +29,13 @@
     @apply text-xs text-white leading-[81px];
   }
   .button {
-    @apply text-base md:text-xl uppercase;
+    @apply text-base md:text-xl uppercase leading-3;
   }
   .button-buy {
-    @apply bg-yellow rounded-[23px] border-black border-2 shadow-btn shadow-black w-[266px] text-center py-[10px] h-[46px] items-center justify-center mb-[30px];
+    @apply bg-yellow rounded-[23px] border-black border-2 shadow-btn shadow-black text-center py-[10px] h-[46px] items-center justify-center mb-[30px];
+  }
+  .button-modal-buy {
+    @apply flex bg-yellow rounded-[23px] border-black border-2 shadow-btn shadow-black text-center py-[10px] h-[46px] items-center justify-center;
   }
   .button-error {
     @apply bg-yellow rounded-[23px] border-black border-2 shadow-btn shadow-black w-[266px] text-center py-[10px] h-[46px] items-center justify-center mb-[30px];
@@ -39,7 +47,7 @@
     @apply rounded-[35px] h-[52px] md:w-full md:h-[61px] bg-grey text-base md:text-xl leading-[27px] text-left px-11 border-2 border-black shadow-button-info;
   }
   .button-form-preorder {
-    @apply w-full border border-black h-10 rounded-[23px] mt-2 mb-[14px] pl-8 focus:border-blue focus:outline-none font-normal;
+    @apply focus:border-blue focus:outline-none font-normal border border-black h-10 rounded-[23px] pl-7 w-full items-center;
   }
   .heckbox-round {
     width: 1.3em;
@@ -60,7 +68,7 @@
     @apply shadow-card;
   }
   .body_text {
-    @apply sm:text-xl text-base;
+    @apply sm:text-xl text-base text-black;
   }
   .text_2 {
     @apply text-sm md:text-base;
@@ -69,7 +77,7 @@
     @apply text-sm;
   }
   .text_4 {
-    @apply text-xs;
+    @apply text-sm lg:text-sm;
   }
   .text_5 {
     @apply font-light text-base md:text-xl lg:text-2xl;
@@ -139,20 +147,23 @@
   .option-container.active .select {
     @apply border-blue;
   }
-  .badge {
-    @apply border-2 border-[#E5EDFC] rounded-3xl hover:bg-[#E5EDFC] py-1 px-2 w-20 transition-all;
+  .badge-container {
+    @apply w-24 h-9;
   }
-  .badge-active {
-    @apply border-black;
+  .badge {
+    @apply border border-[#E5EDFC] rounded-3xl transition-colors py-1 px-4;
   }
   .option {
     @apply hover:bg-grey w-full pl-8 first-of-type:pt-1 last-of-type:pb-1 text-darkestGrey font-normal;
   }
-  .cart-modal {
+  .card-modal {
     @apply fixed z-[120] overflow-auto bg-modal-background w-full h-full hidden;
   }
-  .cart-modal.active {
+  .card-modal.active {
     @apply block;
+  }
+  .card-modal-content {
+    @apply absolute top-1/2 translate-y-[-50%] translate-x-[-50%] left-1/2;
   }
   .thanks-modal {
     @apply fixed z-[120] overflow-hidden bg-modal-background w-full h-full hidden top-0 left-0;
@@ -162,6 +173,76 @@
   }
   .thanks-modal-content {
     @apply absolute top-1/2 translate-y-[-50%] translate-x-[-50%] left-1/2;
+  }
+  .product-modal {
+    @apply fixed z-[120] overflow-hidden bg-modal-background w-full h-full hidden top-0 left-0;
+  }
+  .product-modal.active {
+    @apply block;
+  }
+  .product-modal-content {
+    @apply absolute top-1/2 translate-y-[-50%] translate-x-[-50%] left-1/2;
+  }
+  .zoom-modal {
+    @apply fixed z-[120] overflow-hidden bg-modal-background w-full h-full hidden top-0 left-0;
+  }
+  .zoom-modal.active {
+    @apply block;
+  }
+  .cart-modal {
+    @apply fixed z-[120] overflow-hidden bg-modal-background w-full h-full hidden top-0 left-0;
+  }
+  .cart-modal.active {
+    @apply block;
+  }
+  .cart-modal-content {
+    @apply absolute bottom-0 lg:top-1/2 lg:translate-y-[-50%] lg:translate-x-[-50%] lg:left-1/2;
+  }
+  .tab {
+    @apply hidden;
+  }
+  .tab.active {
+    @apply flex flex-col;
+  }
+  .tab-button.active {
+    @apply border-b-2 border-black transition-none;
+  }
+  .scrollbar-off::-webkit-scrollbar {
+    @apply w-0;
+  }
+  .overflow-product-card {
+    @apply overflow-scroll scrollbar-off h-[calc(82.5vh-130px)] xl:h-[calc(78vh-130px)] 2xl:h-[calc(87vh-130px)];
+  }
+  .grid-any-pages {
+    @apply pl-5 lg:pl-[104px] 3xl:pl-[309px] xl:pl-40 pr-10 lg:pr-[104px] xl:pr-40 3xl:pr-[309px] pb-16 xl:pb-28;
+  }
+  .image-any-pages {
+    @apply object-cover w-full;
+  }
+  .image-for-washing {
+    @apply mx-5 lg:ml-[104px] lg:mr-[104px] xl:mx-auto w-[1093px];
+  }
+  .wrapper-for-image {
+    @apply xs:ml-5 lg:ml-[104px] 3xl:ml-[309px] xl:ml-40 xs:mr-10 lg:mr-[104px] xl:mr-40 3xl:mr-[309px] xs:mt-8
+    border-b border-black xs:border-2  xs:rounded-[20px]
+    bg-main-gradient;
+  }
+  .wrapper-for-payment {
+    @apply xs:ml-5 lg:ml-[104px] 3xl:ml-[309px] xl:ml-40 xs:mr-10 lg:mr-[104px] xl:mr-40 3xl:mr-[309px] xs:mt-8
+    border-b border-black xs:border-none
+    bg-main-gradient xs:bg-none;
+  }
+  .bg-main-gradient {
+    @apply bg-gradient-to-r from-lightestGrey to-darkGrey;
+  }
+  .yandexmap {
+    @apply w-[500px] h-[500px] bg-red;
+  }
+  .yamap {
+    @apply xs:ml-5 lg:ml-[104px] 3xl:ml-[309px] xl:ml-40 xs:mr-10 lg:mr-[104px] xl:mr-40 3xl:mr-[309px] xs:mt-8;
+  }
+  .yamap-text {
+    @apply md:pl-5 lg:pl-[104px] 3xl:pl-[309px] xl:pl-40 md:pr-10 lg:pr-[104px] xl:pr-40 3xl:pr-[309px];
   }
 }
 
@@ -205,7 +286,6 @@
   svg {
     @apply transition-[stroke] ease-out;
   }
-
   a,
   button:hover {
     @apply cursor-goose-pointer;

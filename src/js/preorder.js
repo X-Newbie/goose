@@ -12,10 +12,24 @@ const cityInput = document.querySelector("#city-select");
 const cityOptions = document.querySelectorAll(".city.option");
 const cityOptionContainer = document.querySelector(".city.option-container");
 
-const initCustomSelector = (select, input, options, optionsContainer) => {
+const initCustomSelector = (
+  select,
+  input,
+  options,
+  optionsContainer,
+  arrowDegree
+) => {
+  const root = document.documentElement;
+
   select.onclick = () => {
     optionsContainer.classList.toggle("active");
     input.classList.toggle("border-blue");
+    console.log(getComputedStyle(root).getPropertyValue(arrowDegree));
+    if (getComputedStyle(root).getPropertyValue(arrowDegree) !== "180deg") {
+      root.style.setProperty(arrowDegree, "180deg");
+    } else {
+      root.style.setProperty(arrowDegree, "0deg");
+    }
   };
 
   options.forEach((e) => {
@@ -35,9 +49,16 @@ initCustomSelector(
   deliverySelect,
   deliveryInput,
   deliveryOptions,
-  deliveryOptionContainer
+  deliveryOptionContainer,
+  "--delivery-arrow-rotate"
 );
-initCustomSelector(citySelect, cityInput, cityOptions, cityOptionContainer);
+initCustomSelector(
+  citySelect,
+  cityInput,
+  cityOptions,
+  cityOptionContainer,
+  "--city-arrow-rotate"
+);
 
 const openModalButtons = document.querySelectorAll(".button-buy");
 const thanksModal = document.querySelector(".thanks-modal");
@@ -54,5 +75,7 @@ const gooseOnSkate = document.querySelector(".goose-on-skate");
 gooseOnSkateTl
   .to(gooseOnSkate, { y: -10, duration: 1 })
   .to(gooseOnSkate, { y: 0, duration: 1 })
-  .to(gooseOnSkate, { rotate: -5, duration: 0.5 })
-  .to(gooseOnSkate, { rotate: 0, duration: 0.5 });
+  .to(gooseOnSkate, { y: -10, duration: 1 })
+  .to(gooseOnSkate, { y: 0, duration: 1 })
+  .to(gooseOnSkate, { rotate: -3, duration: 0.4 })
+  .to(gooseOnSkate, { rotate: 0, duration: 0.4 });
